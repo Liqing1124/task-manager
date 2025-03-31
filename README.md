@@ -18,18 +18,23 @@ A full-stack task management application built with Spring Boot backend and Reac
 ## Project Structure
 
 ```
-taskmanagerappBE/             # Backend IntelliJ project folder
 taskmanagerbe/                # Backend main source code
-  └── src/main/java/com/soloteam/taskmanagerbe/
-      ├── config/             # Spring configuration
-      ├── controller/         # REST controllers
-      ├── entity/             # Database entities
-      ├── repository/         # JPA repositories
-      └── TaskmanagerbeApplication.java # Main class
+└── src/main/java/com/soloteam/taskmanagerbe/
+    ├── config/               # Spring configuration
+    ├── controller/           # REST controllers
+    ├── entity/               # Database entities
+    └── repository/           # JPA repositories
+
 taskmanagerfe/                # Frontend React application
-  └── src/
-      ├── components/         # React components
-      └── App.js             # Root component
+└── src/
+    ├── App.js                # Root component
+    ├── App.css               # Root component styles
+    ├── index.js              # Entry point
+    ├── components/           # React components
+    │   ├── TaskManager.js    # Main task management component
+    │   └── TaskManager.css   # Styles for task management
+    ├── index.css             # Global styles
+    └── other utility files   # reportWebVitals, setupTests, etc.
 ```
 
 ## Prerequisites
